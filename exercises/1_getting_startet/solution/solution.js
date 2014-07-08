@@ -1,7 +1,7 @@
 var _ = require("lodash");
 
-var test = function(item){
+var filterwhere = function(item){
     return _.where(item, {active: true});
 };
 
-module.exports = test;
+module.exports = filterwhere;

@@ -5,7 +5,7 @@ Let's start with a very often used function in Lo-Dash called "where":
 
 ````_.where(collection, props)````
 
-The where-function filters the **collection**-Object (Array, Json, Javascript-Object) and by the **props**-conditiuon.
+The where-function filters the **collection**-Object (Array, Json, Javascript-Object) by the **props**-conditiuon.
 
 ##Example##
 

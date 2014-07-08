@@ -11,7 +11,7 @@ function fpath (f) {
 workshopper({
     name        : 'lololodash',
     title       : 'Lololodash - learn LoDash',
-    subtitle    : 'Learn how to create a workshopper lesson',
+    subtitle    : 'Learn Lo-Dash',
     appDir      : __dirname,
     menuItems   : [],
     exerciseDir : fpath('./exercises/')
