@@ -1,0 +1,30 @@
+{
+  "name": "lololodash",
+  "version": "0.1.0",
+  "description": "lololodash ==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdunisch/lololodash.git"
+  },
+  "bin": "lodash_workshop.js",
+  "keywords": [
+    "lodash",
+    "underscore",
+    "workshopper"
+  ],
+  "author": "mdunisch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdunisch/lololodash/issues"
+  },
+  "homepage": "https://github.com/mdunisch/lololodash",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "workshopper": "^1.3.0",
+    "workshopper-exercise": "^1.1.0"
+  }
+}
