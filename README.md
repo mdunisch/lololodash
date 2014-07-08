@@ -4,6 +4,11 @@ lololodash
 
 
 ## Install
+First install [node](http://nodejs.org) version 0.10 or later.
+
+Once you've installed `node`, you will have an `npm` command.
+
+With [npm](https://npmjs.org) do:
 ```sh
 $ sudo npm install lololodash -g
 $ lololodash
