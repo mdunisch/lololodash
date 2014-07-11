@@ -9,7 +9,7 @@ A lot of the ES5-Functions are for Arrays or Objects but can't be used for both.
 
 For this mission let me show you the **forEach()**-Function, a Collection-Function. You surely know this for Arrays - but for a Object?
 
-````_.forEach(collection, [callback)````
+````_.forEach(collection, [callback])````
 
 Iterates over elements of a **collection** (Array or Json), executing the callback for each element. The **callback-function** have three arguments (value, index|key, collection). Callbacks may exit iteration early by explicitly returning false.
 
@@ -23,7 +23,7 @@ _.forEach({'foo': {'int': 1}, 'bar': {'int': 5}}, function(item) {
 ````
 
 ##Your mission##
-You get a list of european towns with population (millions):
+You receive a list of european towns with population (millions):
 ````javascript
 { Hamburg: { population: 1.698 },
   Strasbourg: { population: 0.272 },
