@@ -44,7 +44,7 @@ warm: [ "Town1", "Town2","Town3" ] }
 ````
 
 ##Template##
-All your solutions should be in the folloing template:
+All your solutions should be in the following template:
 ```javascript
 var _ = require("lodash");
 

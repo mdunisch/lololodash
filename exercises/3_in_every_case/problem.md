@@ -1,8 +1,8 @@
 In Javascript (with the newer browsers or nodejs) you have ES5-Functions for Objects and Arrays (for example ```Array.prototype.forEach```` or ````Object.keys````).
 All functions in Lo-Dash are categorize in 4 pars:
-- Array-Functions (usefull for Arrays)
-- Object-Functions (usefull for JSONs)
-- Colletion-Functions (usefull for Arrays and JSONs)
+- Array-Functions (useful for Arrays)
+- Object-Functions (useful for JSONs)
+- Collection-Functions (useful for Arrays and JSONs)
 - Utilities-Functions - we get to this later
 
 A lot of the ES5-Functions are for Arrays or Objects but can't be used for both. With Lo-Dash you can!
@@ -22,6 +22,7 @@ _.forEach({'foo': {'int': 1}, 'bar': {'int': 5}}, function(item) {
 // → logs "1" "5"
 ````
 
+───────────────────────────
 ##Your mission##
 You receive a list of european towns with population (millions):
 ````javascript
@@ -31,7 +32,7 @@ You receive a list of european towns with population (millions):
   Dublin: { population: 0.528 } }
 ````
 
-We want a new "size"-attribute on every town depents on the population of each town like this:
+We want a new "size"-attribute on every town depends on the population of each town like this:
 ````javascript
 { City1: {population: 1.58, size: 'big'},
   City2: {population: 0.58, size: 'mid'},
@@ -49,7 +50,7 @@ Use the following rules:
 Don't know how to start? Use a forEach to go through the given json and use a if()/if else()-condition to add a size-variable.
 
 ##Template##
-All your solutions should be in the folloing template:
+All your solutions should be in the following template:
 ```javascript
 var _ = require("lodash");
 

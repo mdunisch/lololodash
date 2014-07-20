@@ -5,7 +5,7 @@ Let's start with a very often used function in Lo-Dash called "where":
 
 ````_.where(collection, props)````
 
-The where-function filters the **collection**-Object (Array, Json, Javascript-Object) by the **props**-conditiuon.
+The where-function filters the **collection**-Object (Array, Json, Javascript-Object) by the **props**-condition.
 
 ##Example##
 
@@ -19,6 +19,7 @@ _.where(characters, { 'age': 36 });
 // → [{ 'name': 'barney', 'age': 36, 'pets': ['hoppy'] }]
 ```
 
+───────────────────────────
 ##Your mission##
 We have a userlist in the following format:
 ````javascript
@@ -33,7 +34,7 @@ We have a userlist in the following format:
 Please write a Function that takes a Userlist-Object as first argument and give back only the active users (active = true)
 
 ##Template##
-All your solutions should be in the folloing template:
+All your solutions should be in the following template:
 ```javascript
 var _ = require("lodash");
 

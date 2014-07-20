@@ -31,8 +31,9 @@ _.sortBy(characters, 'age');
        { name: 'fred', age: 40 } ]
 ```
 
-**Attention**: sortBy() always sort from the smallest to the bigest!
+**Attention**: sortBy() always sort from the smallest to the biggest!
 
+───────────────────────────
 ##Your mission##
 We have a list of items sold yesterday like this:
 ````javascript
@@ -44,10 +45,10 @@ We have a list of items sold yesterday like this:
 Please write a function that sort this article-list by the quantity (from big to small).
 
 ##Hint##
-Because of sortBy sort from smallest to bigest by default you may use a callback-function.
+Because of sortBy sort from smallest to biggest by default you may use a callback-function.
 
 ##Template##
-All your solutions should be in the folloing template:
+All your solutions should be in the following template:
 ```javascript
 var _ = require("lodash");
 
