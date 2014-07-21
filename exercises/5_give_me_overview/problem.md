@@ -56,9 +56,6 @@ Please write a function that:
 { article: 2, quantity: 2 }]
 ````
 
-##Hints##
-Don't know how to start? You solution could start with a groupBy-Function (see)
-
 ##Template##
 All your solutions should be in the following template:
 ```javascript
