@@ -1,6 +1,5 @@
 var _ = require("lodash");
 
-
 var overview = function(orders) {
 
     var overviewarray = [];

@@ -41,7 +41,7 @@ Please write a function that:
 ````javascript
 {"average": 167,
 "underperform": [{ "name": "foobar", "income": 99 },
-                { "name": "mike", "income": 100 }],
+                { "name": "dummy", "income": 100 }],
 "overperform": [{ "name": "foo", "income": 302 }]
 }
 ````

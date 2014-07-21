@@ -1,6 +1,6 @@
 How many times you fought of "i need it in with total values"? Well with lodash there are lots of function to help you.
 
-For this mission let me show you the **reduce()** function and the **groupBy()** function
+For this mission let me show you the **reduce()** function
 
 ````_.reduce(collection, [callback], [accumulator], [thisArg])````
 
@@ -20,19 +20,6 @@ _.reduce({ 'a': 1, 'b': 2, 'c': 3 }, function(result, num, key) {
   return result;
 }, {});
 // → { 'a': 3, 'b': 6, 'c': 9 }
-````
-
-````_.groupBy(collection, [callback])````
-Creates an object composed of keys generated from the results of running each element of a **collection**-Object (Array, Json, Javascript-Object) through the **callback**. The corresponding value of each key is an array of the elements responsible for generating the key.
-
-##Example##
-````javascript
-_.groupBy([4.2, 6.1, 6.4], function(num) { return Math.floor(num); });
-// → { '4': [4.2], '6': [6.1, 6.4] }
-
-// using "_.pluck" callback shorthand
-_.groupBy([{name: 'mike', age: 23}, {name: 'mike', age: 41}, {name: 'tom', age: 19}], 'name');
-// → { 'mike': [{name: 'mike', age: 23}, {name: 'mike', age: 41}], 'tom': [{name: 'tom', age: 19}] }
 ````
 
 ───────────────────────────
