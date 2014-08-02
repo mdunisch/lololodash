@@ -45,11 +45,11 @@ var run = {
 
 
 var testing = {
-    'Check with Elements of "run"-Enviroment': {
+    'Checking with standard dataset...': {
         input: run.json,
         shouldbe: run.expect
     },
-    'Checking with only one article': {
+    'Checking with only one article...': {
         input: [
             {
                 article: 1,
@@ -71,7 +71,7 @@ var testing = {
             }
         ]
     },
-    'Checking 0 quantitys': {
+    'Checking 0 quantitys...': {
         input:[
             {
                 article: 1,
