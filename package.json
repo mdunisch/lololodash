@@ -1,7 +1,7 @@
 {
   "name": "lololodash",
   "version": "0.1.0",
-  "description": "lololodash ==========",
+  "description": "A Set of Lo-Dash Javascript Exercises",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,8 @@
     "type": "git",
     "url": "https://github.com/mdunisch/lololodash.git"
   },
-  "bin": "lodash_workshop.js",
+  "bin": "lololodash.js",
+  "preferGlobal": true,
   "keywords": [
     "lodash",
     "underscore",

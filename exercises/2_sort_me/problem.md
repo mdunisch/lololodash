@@ -1,22 +1,26 @@
-Sorting a Array or a JSON is sometimes very painfull in Javascript. Lo-Dash helps you with that.
+# Sort Me #
+Sorting a Array or JSON data is sometimes very painfull in Javascript.
+**Lo-Dash** helps you with that.
+* * *
+## The Fixer ##
+Let me introduce you the `sortBy` function:
+```js
+_.sortBy(collection, [callback=identity])
+```
+The `sortBy` function sorts the `collection` object (an Array of Objects, of primitive
+types, or a mix of both) using the `callback` (as an Array, function, Object or String)
+each iteration.
 
-Let me introduce you the sortBy()-Function:
-
-````_.sortBy(collection, [callback=identity])````
-
-The sortBy-function sorts the **collection**-Object (Array, Json, Javascript-Object) with a **Callback-function** (is called each iteration).
-
-##Example##
-
-````javascript
+#### Example ####
+```js
 _.sortBy([1, 2, 3], function(num) { return Math.sin(num); });
+
 // → [3, 1, 2]
 ```
-
-Like the most of the Lo-Dash-Functions sortBy() can also used with the "_.pluck" callback shorthand (http://lodash.com/docs#pluck).
-
-````javascript
-
+If `callback` is a function, it will be called as `callback(value, index|key, collection)`.
+Like most of the **Lo-Dash** functions, `sortBy` can also used with the
+"*.pluck*" callback shorthand (http://lodash.com/docs#pluck).
+```js
 var characters = [
   { 'name': 'barney',  'age': 36 },
   { 'name': 'fred',    'age': 40 },
@@ -25,38 +29,40 @@ var characters = [
 ];
 
 _.sortBy(characters, 'age');
-// → [ { name: 'barney', age: 26 },
-       { name: 'fred', age: 30 },
-       { name: 'barney', age: 36 },
-       { name: 'fred', age: 40 } ]
+
+/*
+[
+    { name: 'barney', age: 26 },
+    { name: 'fred',   age: 30 },
+    { name: 'barney', age: 36 },
+    { name: 'fred',   age: 40 }
+]
+*/
 ```
-
-**Attention**: sortBy() always sort from the smallest to the biggest!
-
-───────────────────────────
-##Your mission##
-We have a list of items sold yesterday like this:
-````javascript
-[{ article: 2323, quantity: 2 },
-{ article: 41, quantity: 24 },
-{ article: 655, quantity: 23 }]
+**Attention**: `sortBy` will always sort ascendingly, from smallest to largest!
+* * *
+## Your Mission ##
+We have an Array of items sold yesterday like this:
+```js
+[{ article: 41,   quantity: 24 },
+ { article: 2323, quantity: 2  },
+ { article: 655,  quantity: 23 }]
 ```
+Please write a function that will sort these items by `quantity` from *largest* to *smallest*.
+> #### Hint ####
+> Because `sortBy` only sorts from smallest to largest you may need to use the callback function.
 
-Please write a function that sort this article-list by the quantity (from big to small).
-
-##Hint##
-Because of sortBy sort from smallest to biggest by default you may use a callback-function.
-
-##Template##
-All your solutions should be in the following template:
-```javascript
+#### Template ####
+All of your solutions should follow this template:
+```js
+// include the Lo-Dash library
 var _ = require("lodash");
 
-var myfunc = function(item){
-    return "something";
+var worker = function(/* arguments */) {
+    // do work; return stuff
 };
 
-module.exports = myfunc;
+// export the worker function as a nodejs module
+module.exports = worker;
 ```
-
-lololodash will call your function and test with different arguments.
+**lololodash** will call your function and test it with different arguments.

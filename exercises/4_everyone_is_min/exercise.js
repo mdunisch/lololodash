@@ -19,11 +19,11 @@ var run = {
 
 
 var testing = {
-    'Check with Elements of "run"-Enviroment': {
+    'Checking with standard dataset...': {
         input: run.json,
         shouldbe: run.expect
     },
-    'Checking only cold': {
+    'Checking with only cold...': {
         input: [
             {Foo: [0,0,0,0,0,2,4,2,1,4,5,2]}
         ],
@@ -32,7 +32,7 @@ var testing = {
             "warm": []
         }
     },
-    'Checking with one temp each': {
+    'Checking with one temp each...': {
         input:{
             "foo": [2],"bar": [16],"tool": [24]
         },
@@ -41,7 +41,7 @@ var testing = {
             "warm": []
         }
     },
-    'Checking with empty Object': {
+    'Checking with empty Object...': {
         input:{},
         shouldbe: {
             "hot": [],

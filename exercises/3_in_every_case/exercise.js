@@ -18,11 +18,11 @@ var run = {
 
 
 var testing = {
-    'Check with Elements of "run"-Enviroment': {
+    'Checking with standard hashtables...': {
         input: run.json,
         shouldbe: run.expect
     },
-    'Checking with item is a array': {
+    'Checking with an Array...': {
         input: [
             {Hamburg: { population: 1.698 }},
             {Strasbourg: { population: 0.272 }},
@@ -51,11 +51,11 @@ var testing = {
                 "size": "small"
             }]
     },
-    'Checking with empty Object': {
+    'Checking with empty Object...': {
         input:{},
         shouldbe: {}
     },
-    'Checking with empty Array': {
+    'Checking with empty Array...': {
         input:[],
         shouldbe: []
     }
