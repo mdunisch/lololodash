@@ -1,20 +1,27 @@
 lololodash
 ==========
-**A NodeSchool style workshopper Lo-Dash Javascript Library**
+**A Set of [NodeSchool](http://nodeschool.io/)-Style, [Workshopper](https://github.com/rvagg/workshopper)-powered, Lo-Dash Javascript Exercises**
 
+## Getting Started ##
+1. First, install [nodejs](http://nodejs.org) version 0.10 or later.
 
-## Install
-First install [node](http://nodejs.org) version 0.10 or later.
+2. The `nodejs` installation will also install `npm`, the [Node Package Manager](https://www.npmjs.org/).
 
-Once you've installed `node`, you will have a `npm` command.
-
-With [npm](https://npmjs.org) do:
+3. Then, install these exercises using `npm`:
+###### Linux ######
 ```sh
 $ sudo npm install lololodash -g
-$ lololodash
+```
+###### Windows ######
+In Windows, the prompt must be launched as an administrator.
+```bat
+> npm install lololodash -g
 ```
 
+4. Run the exercises.
+```
+lololodash
+```
 
-## License
-
-**lololodash** is licensed under the MIT License. All rights not explicitly granted in the MIT License are reserved. See the included [LICENSE](./LICENSE) file for more details.
+## License ##
+**lololodash** is licensed under the MIT License. All rights not explicitly granted by the MIT License are reserved. See the included [LICENSE](./LICENSE) file for more details.

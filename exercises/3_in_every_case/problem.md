@@ -1,64 +1,80 @@
-In Javascript (with the newer browsers or nodejs) you have ES5-Functions for Objects and Arrays (for example ```Array.prototype.forEach```` or ````Object.keys````).
-All functions in Lo-Dash are categorize in 4 pars:
-- Array-Functions (useful for Arrays)
-- Object-Functions (useful for JSONs)
-- Collection-Functions (useful for Arrays and JSONs)
-- Utilities-Functions - we get to this later
+# In Every Case #
+In Javascript (with newer browsers or with **nodejs**) you have
+**[ECMAScript5](http://www.ecma-international.org/ecma-262/5.1/)** functions
+for Objects and Arrays (for example: `Array.prototype.forEach` or `Object.keys`).
+All functions in **Lo-Dash** are categorized as one of the following:
+- **Array Functions** -- *useful for Arrays*
+- **Object Functions** -- *useful for Objects and JSON data*
+- **Collection Functions** -- *useful for sequences of data of various types*
+- **Utilities Functions** -- *we will get to this later*
 
-A lot of the ES5-Functions are for Arrays or Objects but can't be used for both. With Lo-Dash you can!
+A lot of the ES5 functions are for either Arrays or Objects but can't be used
+for both. **Lo-Dash** functions can be!
+* * *
+## So, Now What? ##
+For this mission let me show you the `forEach` function -- a *Collection*
+function. You surely know about this for Arrays, but for Objects?
+```js
+_.forEach(collection, [callback=identity])
+```
+Unlike with `sortBy`, if `callback` is specified, it must be a function. Like
+with `sortBy`, it will be called as `callback(value, index|key, collection)`.
+This function iterates over elements of a *collection* (either an Array or
+hashtable Object) executing `callback` on each element. The callback may end
+iteration early by explicitly returning `false`.
 
-For this mission let me show you the **forEach()**-Function, a Collection-Function. You surely know this for Arrays - but for a Object?
+#### Example ####
+```js
+_.forEach(
+    { 'foo': { 'int': 1 }, 'bar': { 'int': 5 } },
+    function(item) {
+        console.log(item.int);
+    }
+);
 
-````_.forEach(collection, [callback])````
-
-Iterates over elements of a **collection** (Array or Json), executing the callback for each element. The **callback-function** have three arguments (value, index|key, collection). Callbacks may exit iteration early by explicitly returning false.
-
-##Example##
-
-````javascript
-_.forEach({'foo': {'int': 1}, 'bar': {'int': 5}}, function(item) {
-  console.log(item.int);
-});
-// → logs "1" "5"
-````
-
-───────────────────────────
-##Your mission##
-You receive a list of european towns with population (millions):
-````javascript
-{ Hamburg: { population: 1.698 },
+// 1
+// 5
+```
+* * *
+## Your Mission ##
+We're receiving a hastable or associative array of European towns with their
+populations in millions:
+```js
+{ Hamburg:    { population: 1.698 },
   Strasbourg: { population: 0.272 },
-  Rom: { population: 2.753 },
-  Dublin: { population: 0.528 } }
-````
-
-We want a new "size"-attribute on every town depends on the population of each town like this:
-````javascript
-{ City1: {population: 1.58, size: 'big'},
-  City2: {population: 0.58, size: 'mid'},
+  Rom:        { population: 2.753 },
+  Dublin:     { population: 0.528 } }
+```
+We want a new `size` attribute added to every town where the value depends on
+the town's its population, as follows:
+```js
+{ City1: {population: 1.58, size: 'big'  },
+  City2: {population: 0.58, size: 'med'  },
   City3: {population: 0.28, size: 'small'} }
-````
+```
+**Attention**: the list could also be a Array, so you will have to use a
+collection function.
 
-But be aware: the list can also be a Array - so you have to use a Collection-Function.
+Use the following guidelines:
+- All cities having a population over 1 million are "big".
+- Cities having a population less than 1 million but more than 0.5 million are "med".
+- All cities having a population less than 0.5 million are "small".
 
-Use the following rules:
-- All cities having a population over 1 million are "big"
-- Cities with a population less than 1 million and more than 0.5 million a "mid"
-- All cities with a population less than 0.5 million are "small"
+> #### Hint ####
+> Don't know where to start? Use `forEach` to iterate through the supplied data
+> and use an `if-elseif-else` condition to add a size variable.
 
-##Hint##
-Don't know how to start? Use a forEach to go through the given json and use a if()/if else()-condition to add a size-variable.
-
-##Template##
-All your solutions should be in the following template:
-```javascript
+#### Template ####
+All of your solutions should follow this template:
+```js
+// include the Lo-Dash library
 var _ = require("lodash");
 
-var myfunc = function(item){
-    return "something";
+var worker = function(/* arguments */) {
+    // do work; return stuff
 };
 
-module.exports = myfunc;
+// export the worker function as a nodejs module
+module.exports = worker;
 ```
-
-lololodash will call your function and test with different arguments.
+**lololodash** will call your function and test it with different arguments.

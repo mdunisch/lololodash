@@ -30,11 +30,11 @@ var run = {
 
 
 var testing = {
-    'Check with Elements of "run"-Enviroment': {
+    'Checking with standard dataset...': {
         input: run.json,
         shouldbe: run.expect
     },
-    'Checking with only one comment': {
+    'Checking with only one comment...': {
         input: [
             {
                 username: "foo",
@@ -47,7 +47,7 @@ var testing = {
             }
         ]
     },
-    'Testing counting right': {
+    'Testing counting right...': {
         input:[
             {
                 username: "foo",
