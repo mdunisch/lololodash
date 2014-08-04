@@ -47,8 +47,10 @@ We have the income of a few freelancers in a Array of Objects:
 Please write a function that:
 1. Calculates the average income across all of the freelancers.
 2. Puts the freelancers into two groups:
-    1. **underperform** *their income is less than or equal to the average income*.
-    2. **overperform** *their income is greater than the average income*.
+
+**underperform** their income is less than or equal to the average income.
+**overperform** their income is greater than the average income.
+
 3. Sorts the freelancers within the two groups by their income with the lowest first.
 4. Returns an Object in the following form:  
 

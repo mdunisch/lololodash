@@ -3,10 +3,11 @@ In Javascript (with newer browsers or with **nodejs**) you have
 **[ECMAScript5](http://www.ecma-international.org/ecma-262/5.1/)** functions
 for Objects and Arrays (for example: `Array.prototype.forEach` or `Object.keys`).
 All functions in **Lo-Dash** are categorized as one of the following:
-- **Array Functions** -- *useful for Arrays*
-- **Object Functions** -- *useful for Objects and JSON data*
-- **Collection Functions** -- *useful for sequences of data of various types*
-- **Utilities Functions** -- *we will get to this later*
+
+- Array Functions: useful for Arrays
+- Object Functions: useful for Objects and JSON data
+- Collection Functions: useful for sequences of data of various types
+- Utilities Functions: we will get to this later
 
 A lot of the ES5 functions are for either Arrays or Objects but can't be used
 for both. **Lo-Dash** functions can be!

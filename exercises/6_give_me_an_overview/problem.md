@@ -51,8 +51,8 @@ to know the total quantities ordered for each article.
 
 Please write a function that:
 1. Calculates the total number of orders for each article.
-2. Sorts the resulting array so that the articles with the highest
-number of orders are on top
+2. Sorts the resulting array so that the articles with the highest number of orders are on top
+
 ```js
 [ { article: 1, total_orders: 9 },
   { article: 2, total_orders: 2 } ]
