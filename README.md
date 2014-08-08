@@ -8,6 +8,7 @@ lololodash
 2. The `nodejs` installation will also install `npm`, the [Node Package Manager](https://www.npmjs.org/).
 
 3. Then, install these exercises using `npm`:
+
 ###### Linux ######
 ```sh
 $ sudo npm install lololodash -g
