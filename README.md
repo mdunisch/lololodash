@@ -9,11 +9,11 @@ lololodash
 
 3. Then, install these exercises using `npm`:
 
-###### Linux ######
+_Linux_
 ```sh
 $ sudo npm install lololodash -g
 ```
-###### Windows ######
+_Windows_
 In Windows, the prompt must be launched as an administrator.
 ```bat
 > npm install lololodash -g
