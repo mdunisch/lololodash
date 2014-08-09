@@ -75,10 +75,10 @@ We have a JSON of different To-do's:
   ]
 }
 ```
-We want to create a simple nested <ul><li>-List of all the To-do-items.
+We want to create a simple nested `<ul><li>`-List of all the To-do-items.
 But beside of creating HTML-Code we want you to do:
 - Sort the To-do-items by date (from smallest to biggest)
-- Add a "<b>URGENT</b> " to every <li> when the date is only 2 days or less from today.
+- Add a "<b>URGENT</b> " to every `<li>` when the date is only 2 days or less from today.
 
 Your HTML you give us back should look like this:
 
