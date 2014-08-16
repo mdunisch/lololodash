@@ -8,7 +8,7 @@ var addsizetyp = function(item){
         if(value.population > 1){
             item[key].size = "big";
         } else if (value.population > 0.5){
-            item[key].size = "mid";
+            item[key].size = "med";
         } else {
             item[key].size = "small";
         }
