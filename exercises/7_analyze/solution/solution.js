@@ -29,7 +29,7 @@ var analyze = function(item){
 
     return {
         average: average,
-        underperfom: underperform,
+        underperform: underperform,
         overperfrom: overperform
     };
 
