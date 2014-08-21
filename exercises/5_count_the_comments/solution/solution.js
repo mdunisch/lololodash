@@ -5,12 +5,12 @@ var commentcount = function(comments){
     var counted = [];
 
     // Group by article
-    comments = _.groupBy(comments, 'username');
+    var comments = _.groupBy(comments, 'username');
 
-    _.forEach(comments, function(item){
+    _.forEach(comments, function(item, name){
 
         counted.push({
-            username: item[0].username,
+            username: name,
             comment_count: _.size(item)
         });
     });
