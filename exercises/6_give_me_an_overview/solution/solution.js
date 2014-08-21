@@ -26,13 +26,13 @@ var overview = function(orders) {
 
         overviewarray.push({
             article: key,
-            total_quantity: total
+            total_orders: total
         });
 
     });
 
     // Order
-    overviewarray = _.sortBy(overviewarray, "total_quantity").reverse();
+    overviewarray = _.sortBy(overviewarray, "total_orders").reverse();
 
     return overviewarray;
 };

@@ -30,15 +30,15 @@ var run = {
     expect: [
         {
             "article": 2323,
-            "total_quantity": 14
+            "total_orders": 14
         },
         {
             "article": 655,
-            "total_quantity": 6
+            "total_orders": 6
         },
         {
             "article": 41,
-            "total_quantity": 1
+            "total_orders": 1
         }
     ]
 };
@@ -67,7 +67,7 @@ var testing = {
         shouldbe: [
             {
                 "article": 1,
-                "total_quantity": 8
+                "total_orders": 8
             }
         ]
     },
@@ -85,7 +85,7 @@ var testing = {
         shouldbe: [
             {
                 "article": 1,
-                "total_quantity": 0
+                "total_orders": 0
             }
         ]
     }
