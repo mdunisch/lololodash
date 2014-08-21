@@ -1,10 +1,10 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash");
 
 var run = {
-    json:[
+    json: [
         {
             article: 2323,
             quantity: 2
@@ -19,9 +19,9 @@ var run = {
         }
     ],
     expect: [
-         { article: 41, quantity: 24 },
-         { article: 655, quantity: 23 },
-         { article: 2323, quantity: 2 }
+        { article: 41, quantity: 24 },
+        { article: 655, quantity: 23 },
+        { article: 2323, quantity: 2 }
     ]
 };
 
@@ -43,4 +43,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

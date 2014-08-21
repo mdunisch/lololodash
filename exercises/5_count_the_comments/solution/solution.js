@@ -1,13 +1,15 @@
+'use strict';
+
 var _ = require("lodash");
 
-var commentcount = function(comments){
+var commentcount = function (comments) {
 
     var counted = [];
 
     // Group by article
-    var comments = _.groupBy(comments, 'username');
+    comments = _.groupBy(comments, 'username');
 
-    _.forEach(comments, function(item, name){
+    _.forEach(comments, function (item, name) {
 
         counted.push({
             username: name,

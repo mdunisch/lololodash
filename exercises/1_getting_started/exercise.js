@@ -42,4 +42,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

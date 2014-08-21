@@ -1,7 +1,9 @@
+'use strict';
+
 var _ = require("lodash");
 
-var sorting = function(item){
-    return _.sortBy(item,function(item){
+var sorting = function (item) {
+    return _.sortBy(item, function (item) {
         return -item.quantity;
     });
 

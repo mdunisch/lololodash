@@ -1,8 +1,8 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
-var moment = require("moment");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash"),
+    moment = require("moment");
 
 var run = {
 
@@ -90,4 +90,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

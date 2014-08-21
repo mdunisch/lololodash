@@ -1,13 +1,14 @@
+'use strict';
+
 var _ = require("lodash");
 
+var addsizetyp = function (item) {
 
-var addsizetyp = function(item){
+    _.forEach(item, function (value, key) {
 
-    _.forEach(item,function(value,key){
-
-        if(value.population > 1){
+        if (value.population > 1) {
             item[key].size = "big";
-        } else if (value.population > 0.5){
+        } else if (value.population > 0.5) {
             item[key].size = "med";
         } else {
             item[key].size = "small";

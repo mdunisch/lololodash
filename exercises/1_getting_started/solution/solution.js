@@ -1,6 +1,8 @@
+'use strict';
+
 var _ = require("lodash");
 
-var filterwhere = function(item){
+var filterwhere = function (item) {
     return _.where(item, {active: true});
 };
 

@@ -1,7 +1,7 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash");
 
 var run = {
 
@@ -39,7 +39,8 @@ var testing = {
             {
                 username: "foo",
                 comment: "lalalala"
-            }],
+            }
+        ],
         shouldbe: [
             {
                 "username": "foo",
@@ -48,7 +49,7 @@ var testing = {
         ]
     },
     'Testing counting right...': {
-        input:[
+        input: [
             {
                 username: "foo",
                 comment: "lalalala"
@@ -75,4 +76,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

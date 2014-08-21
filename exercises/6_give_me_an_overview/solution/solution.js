@@ -1,8 +1,11 @@
+'use strict';
+
 var _ = require("lodash");
 
-var overview = function(orders) {
+var overview = function (orders) {
 
-    var overviewarray = [];
+    var overviewarray = [],
+        total = 0;
 
     // Group by article
     orders = _.groupBy(orders, 'article');
@@ -10,18 +13,17 @@ var overview = function(orders) {
     _.forEach(orders, function (item, key) {
 
         key = parseInt(key);
-        var total = 0;
+        total = 0;
 
         // If only one article
-        if(item.length === 1){
+        if (item.length === 1) {
             total = item[0].quantity;
 
         // Else make sum of all orders
-        }else{
-
+        } else {
             total = _.reduce(item, function(sum, item) {
                 return sum + item.quantity;
-            },0);
+            }, 0);
         }
 
         overviewarray.push({

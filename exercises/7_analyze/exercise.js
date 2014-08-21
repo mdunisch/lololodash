@@ -1,7 +1,7 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash");
 
 var run = {
     json: [
@@ -58,19 +58,20 @@ var testing = {
         shouldbe: {
             "average": 2563,
             "underperform": [{
-                    "name": "mike",
-                    "income": 2563
-                }],
+                "name": "mike",
+                "income": 2563
+            }],
             "overperform": []
         }
     },
     'Checking with different sortings': {
-        input:[
+        input: [
             { name: "mike", income: 100 },
             { name: "kim", income: 99 },
             { name: "foo", income: 101 }
         ],
-        shouldbe: {"average": 100,
+        shouldbe: {
+            "average": 100,
             "underperform": [
                 { "name": "kim", "income": 99 },
                 { "name": "mike", "income": 100 }
@@ -82,4 +83,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

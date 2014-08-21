@@ -1,7 +1,7 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash");
 
 var run = {
 
@@ -72,7 +72,7 @@ var testing = {
         ]
     },
     'Checking 0 quantitys...': {
-        input:[
+        input: [
             {
                 article: 1,
                 quantity: 0
@@ -91,4 +91,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);

@@ -1,10 +1,9 @@
 'use strict';
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
+var verify = require("../../lib/verify.js"),
+    _ = require("lodash");
 
 var run = {
-
     json: {
         name: "Tom",
         login: [
@@ -29,4 +28,4 @@ var testing = {
     }
 };
 
-module.exports = verify(testing,run);
+module.exports = verify(testing, run);
