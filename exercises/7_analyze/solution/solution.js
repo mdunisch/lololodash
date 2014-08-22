@@ -32,7 +32,7 @@ var analyze = function (item) {
     return {
         average: average,
         underperform: underperform,
-        overperfrom: overperform
+        overperform: overperform
     };
 
 };

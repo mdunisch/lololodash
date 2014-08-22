@@ -3,9 +3,13 @@
 'use strict';
 
 var workshopper = require('workshopper'),
-    path        = require('path');
+    path        = require('path'),
+    updateNotifier = require('update-notifier'),
+    pkg = require('./package.json');
 
-function fpath (f) {
+updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
+
+function fpath(f) {
     return path.join(__dirname, f);
 }
 
