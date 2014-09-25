@@ -13,7 +13,7 @@ the same as `<? ?>`.
 ```js
 var mytemplate = '<% _.forEach(data, function(item){ %>' +
     '<li><%= item %></li>' +
-'<% }); %>';
+    '<% }); %>';
 _.template(mytemplate, {data: [1, 2, 3]});
 
 /*
@@ -28,8 +28,8 @@ Javascript. Isn't that awesome?
 
 As a third parameter, `template()` accepts a options object. One of
 the options I really like and want to show you is `option.imports`.
-With `options.imports`, you can define an object to describe values to import into the
-template as local variables.
+With `options.imports`, you can define an object to describe values
+to import into the template as local variables.
 
 #### Example ####
 ```js
@@ -38,7 +38,8 @@ var ucfirst = function (str) {
     return f + str.substr(1);
 };
 
-_.template('Hello <%= ucfirst(foo) %>', {foo: "mike"}, { 'imports': { 'ucfirst': ucfirst } });
+_.template('Hello <%= ucfirst(foo) %>', {foo: "mike"},
+           { 'imports': { 'ucfirst': ucfirst } });
 // Hello Mike
 ```
 
@@ -74,8 +75,8 @@ We have a JSON of different to-do's:
   ]
 }
 ```
-We want to create a simple nested `<ul><li>` list of all the to-do items.
-But, in addition to creating HTML code, we want you to:
+We want to create a simple nested `<ul><li>` list of all the
+to-do items. But, in addition to creating HTML code, we want you to:
 - Sort the to-do items by date (from earliest to latest)
 - Add a "<b>URGENT</b>" to every `<li>` when the date is only 2 days or fewer from today.
 

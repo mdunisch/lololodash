@@ -5,7 +5,8 @@ Let's do a little bit of templating!
 * * *
 ## Lead the Way ##
 For this mission, let me show you the `template` function.
-_template() gives you access to simple and powerfull micro-templating with Lo-Dash.
+_template() gives you access to simple and powerfull micro-templating
+with Lo-Dash.
 
 ```js
 _.template(text, data)
@@ -31,9 +32,9 @@ a simple var for us:
   login: [ 1407574431, 140753421 ]
 }
 ```
-We want a simple string greeting the user by name and showing the number of times
-the user has logged in (every timestamp represents one login). Your
-function should return a String like this:
+We want a simple string greeting the user by name and showing the
+number of times the user has logged in (every timestamp represents
+one login). Your function should return a String like this:
 
 ```
 Hello Foo (logins: 2)
