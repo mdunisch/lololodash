@@ -43,7 +43,7 @@ populations in millions:
 ```js
 { Hamburg:    { population: 1.698 },
   Strasbourg: { population: 0.272 },
-  Rom:        { population: 2.753 },
+  Rome:       { population: 2.753 },
   Dublin:     { population: 0.528 } }
 ```
 We want a new `size` attribute added to every town where the value depends on
