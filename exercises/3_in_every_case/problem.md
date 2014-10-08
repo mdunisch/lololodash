@@ -38,7 +38,7 @@ _.forEach(
 ```
 * * *
 ## Your Mission ##
-We're receiving a hastable or associative array of European towns with their
+We're receiving a hashtable or associative array of European towns with their
 populations in millions:
 ```js
 { Hamburg:    { population: 1.698 },
