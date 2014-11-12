@@ -38,8 +38,8 @@ _.forEach(
 ```
 * * *
 ## Your Mission ##
-We're receiving a hashtable or associative array of European towns with their
-populations in millions:
+Please write a function that takes in a hashtable or associative array of
+European towns with their populations in millions:
 ```js
 { Hamburg:    { population: 1.698 },
   Strasbourg: { population: 0.272 },
@@ -47,13 +47,13 @@ populations in millions:
   Dublin:     { population: 0.528 } }
 ```
 We want a new `size` attribute added to every town where the value depends on
-the town's its population, as follows:
+the town's population, as follows:
 ```js
 { City1: {population: 1.58, size: 'big'  },
   City2: {population: 0.58, size: 'med'  },
   City3: {population: 0.28, size: 'small'} }
 ```
-**Attention**: the list could also be a Array, so you will have to use a
+**Attention**: the list could also be an Array, so you will have to use a
 collection function.
 
 Use the following guidelines:
