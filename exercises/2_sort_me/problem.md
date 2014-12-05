@@ -1,9 +1,9 @@
 # Sort Me #
-Sorting a Array or JSON data is sometimes very painfull in Javascript.
+Sorting a Array or JSON data is sometimes very painful in Javascript.
 **Lo-Dash** helps you with that.
 * * *
 ## The Fixer ##
-Let me introduce you the `sortBy` function:
+Let me introduce to you the `sortBy` function:
 ```js
 _.sortBy(collection, [callback=identity])
 ```
