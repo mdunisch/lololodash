@@ -2,20 +2,18 @@
 
 var _ = require("lodash");
 
-var addsizetyp = function (item) {
-
-    _.forEach(item, function (value, key) {
-
-        if (value.population > 1) {
-            item[key].size = "big";
-        } else if (value.population > 0.5) {
-            item[key].size = "med";
-        } else {
-            item[key].size = "small";
-        }
-    });
-
-    return item;
+module.exports = function(collection) {
+  // add a size attribute to the collection based on the item's population
+  // >= 1.0 (million) is "big"
+  // >= 0.5 && < 1.0 is "med"
+  // < 0.5 is "small"
+  return _.forEach(collection, function(item) {
+    if (item.population >= 1) {
+      item.size = "big";
+    } else if(item.population < 0.5) {
+      item.size = "small";
+    } else {
+      item.size = "med";
+    }
+  });
 };
-
-module.exports = addsizetyp;
