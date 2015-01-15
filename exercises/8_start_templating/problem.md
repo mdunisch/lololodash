@@ -5,7 +5,7 @@ Let's do a little bit of templating!
 * * *
 ## Lead the Way ##
 For this mission, let me show you the `template` function.
-_template() gives you access to simple and powerful micro-templating
+_.template() gives you access to simple and powerful micro-templating
 with Lo-Dash.
 
 ```js
