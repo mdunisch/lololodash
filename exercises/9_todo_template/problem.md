@@ -14,7 +14,7 @@ the same as `<? ?>`.
 var mytemplate = '<% _.forEach(data, function(item){ %>' +
     '<li><%= item %></li>' +
     '<% }); %>';
-_.template(mytemplate, {data: [1, 2, 3]});
+_.template(mytemplate)({data: [1, 2, 3]});
 
 /*
 <li>1</li>
@@ -26,7 +26,7 @@ You can write templates without learning a template syntax -- just use
 Javascript. Isn't that awesome?
 
 
-As a third parameter, `template()` accepts a options object. One of
+As a second parameter, `template()` accepts a options object. One of
 the options I really like and want to show you is `option.imports`.
 With `options.imports`, you can define an object to describe values
 to import into the template as local variables.
@@ -38,8 +38,8 @@ var ucfirst = function (str) {
     return f + str.substr(1);
 };
 
-_.template('Hello <%= ucfirst(foo) %>', {foo: "mike"},
-           { 'imports': { 'ucfirst': ucfirst } });
+_.template('Hello <%= ucfirst(foo) %>',
+    { 'imports': { 'ucfirst': ucfirst } })({foo: "mike"});
 // Hello Mike
 ```
 

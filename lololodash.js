@@ -7,7 +7,7 @@ var workshopper = require('workshopper'),
     updateNotifier = require('update-notifier'),
     pkg = require('./package.json');
 
-updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
+updateNotifier({pkg: pkg}).notify();
 
 function fpath(f) {
     return path.join(__dirname, f);

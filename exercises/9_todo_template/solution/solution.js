@@ -36,7 +36,7 @@ var template = function (inputvar) {
         '<% }); %>' +
         '</ul>';
 
-    return _.template(mytemplate, {input: inputvar}, { 'imports': { 'checkdate': checkdate } });
+    return _.template(mytemplate, { 'imports': { 'checkdate': checkdate } })({input: inputvar});
 };
 
 module.exports = template;

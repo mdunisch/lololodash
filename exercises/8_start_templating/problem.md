@@ -9,7 +9,7 @@ _.template() gives you access to simple and powerful micro-templating
 with Lo-Dash.
 
 ```js
-_.template(text, data)
+_.template(text)(data)
 ```
 `template` uses your `text`-var as a template and returns interpolated
 text with your `data`.
@@ -17,7 +17,7 @@ In your template you can use `<%= VARNAME %>` to print a variable.
 
 #### Example ####
 ```js
-_.template('<b><%= value %></b>', { value: 'attention' });
+_.template('<b><%= value %></b>')({ value: 'attention' });
 
 // '<b>attention</b>'
 
