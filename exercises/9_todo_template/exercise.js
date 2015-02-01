@@ -10,21 +10,21 @@ var run = {
         "Tom": [
             {
                 todo: "Clean kitchen",
-                date: moment().add(10, 'days')
+                date: moment().add(10, 'days').toJSON()
             },
             {
                 todo: "Lean Lo-Dash",
-                date: moment().add(1, 'days')
+                date: moment().add(1, 'days').toJSON()
             },
             {
                 todo: "Become a Lo-Dash master",
-                date: moment().add(3, 'days')
+                date: moment().add(3, 'days').toJSON()
             }
         ],
         "Tim": [
             {
                 todo: "Contibute to an Open-Sorce-Project",
-                date: moment().add(2, 'days')
+                date: moment().add(2, 'days').toJSON()
             }
         ]
     },
@@ -54,19 +54,19 @@ var testing = {
             Martin: [
                 {
                     todo: "1",
-                    date: moment().add(3, 'days')
+                    date: moment().add(3, 'days').toJSON()
                 },
                 {
                     todo: "2",
-                    date: moment().add(2, 'days')
+                    date: moment().add(2, 'days').toJSON()
                 },
                 {
                     todo: "3",
-                    date: moment().add(1, 'days')
+                    date: moment().add(1, 'days').toJSON()
                 },
                 {
                     todo: "4",
-                    date: moment().add(10, 'days')
+                    date: moment().add(10, 'days').toJSON()
                 }
             ]
         },
@@ -77,11 +77,11 @@ var testing = {
             Martin: [
                 {
                     todo: "1",
-                    date: moment().add(2, 'days').add(1, 'hours')
+                    date: moment().add(2, 'days').add(1, 'hours').toJSON()
                 },
                 {
                     todo: "1",
-                    date: moment().add(1, 'days').add(23, 'hours')
+                    date: moment().add(1, 'days').add(23, 'hours').toJSON()
                 }
 
             ]
