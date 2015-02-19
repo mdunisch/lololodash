@@ -11,5 +11,11 @@
     "7: Analyze": "7 : Analyse",
     "8: Start templating": "8 : Commence les templates",
     "9: ToDo Template": "9 : Template de To-Do"
+  },
+  "exercises": {
+    "8: Start templating": {
+      "Hello Tom (logins: 3)": "Bonjour Tom (connexions : 3)",
+      "Hello Tom (logins: 0)": "Bonjour Tom (connexions : 0)"
+    }
   }
 }
