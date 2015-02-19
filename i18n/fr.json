@@ -1,0 +1,15 @@
+{
+  "title": "Lololodash - Apprenez LoDash",
+  "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
+  "exercise": {
+    "1: Getting Started": "1 : Démarrer",
+    "2: Sort Me": "2 : Trie-moi",
+    "3: In Every Case": "3 : Dans tous les cas",
+    "4: Everyone Is Min": "4 : Tout le monde est petit",
+    "5: Count the Comments": "5 : Compte les commentaires",
+    "6: Give Me an Overview": "6 : Fais-moi un résumé",
+    "7: Analyze": "7 : Analyse",
+    "8: Start templating": "8 : Commence les templates",
+    "9: ToDo Template": "9 : Template de To-Do"
+  }
+}

@@ -15,9 +15,6 @@ function fpath(f) {
 
 workshopper({
     name        : 'lololodash',
-    title       : 'Lololodash - learn LoDash',
-    subtitle    : 'Learn Lo-Dash',
     appDir      : __dirname,
-    menuItems   : [],
-    exerciseDir : fpath('./exercises/')
+    languages   : ['en', 'fr']
 });

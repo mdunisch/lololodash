@@ -22,10 +22,10 @@
   "homepage": "https://github.com/mdunisch/lololodash",
   "dependencies": {
     "diff": "^1.2.2",
-    "lodash": "^3.1.0",
+    "lodash": "^3.2.0",
     "moment": "^2.9.0",
     "update-notifier": "^0.3.0",
-    "workshopper": "^2.2.0",
-    "workshopper-exercise": "^2.1.0"
+    "workshopper": "^2.3.1",
+    "workshopper-exercise": "^2.3.0"
   }
 }
