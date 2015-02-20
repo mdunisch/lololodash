@@ -19,7 +19,7 @@ lololodash
   ```bat
   > npm install lololodash -g
   ```
-  
+
 4. Run the exercises.
   ```
   > lololodash
