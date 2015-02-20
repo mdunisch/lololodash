@@ -1,15 +1,66 @@
 {
   "title": "Lololodash - Apprenez LoDash",
   "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
+  "common": {
+    "exercise": {
+      "logcompare": {
+        "input": "Entrée",
+        "output": "Sortie",
+        "output_should_be": "La sortie devrait être :"
+      },
+      "missing_deps": "You need to install all of the dependencies you are using in your solution (e.g. lodash)",
+      "module_not_found": "Could not find your file. Make sure the path is correct.",
+      "must_export_function": "You should always return a function using the module.exports object.",
+
+      "Check with Elements of \"run\"-Enviroment": "Vérification sur base des éléments de l’environnement « run »",
+      "Checking with standard dataset...": "Vérification avec un jeu de données standard…",
+      "Checking with empty Object": "Vérification avec un objet vide",
+      "Checking with empty Object...": "Vérification avec un objet vide…",
+      "Checking with empty Array...": "Vérification avec un tableau vide…",
+      "Checking with standard hashtables...": "Vérification avec des hashtables standard…"
+    }
+  },
   "exercise": {
     "1: Getting Started": "1 : Démarrer",
     "2: Sort Me": "2 : Trie-moi",
     "3: In Every Case": "3 : Dans tous les cas",
-    "4: Everyone Is Min": "4 : Tout le monde est petit",
+    "4: Everyone Is Min": "4 : Tout le monde a la moyenne",
     "5: Count the Comments": "5 : Compte les commentaires",
     "6: Give Me an Overview": "6 : Fais-moi un résumé",
     "7: Analyze": "7 : Analyse",
     "8: Start templating": "8 : Commence les templates",
     "9: ToDo Template": "9 : Template de To-Do"
+  },
+  "exercises": {
+    "2: Sort Me": {
+      "Checking with quantity as String...": "Vérification avec la quantité en String…"
+    },
+    "4: Everyone Is Min": {
+      "Checking with only cold...": "Vérification avec seulement des températures froides…",
+      "Checking with one temp each...": "Vérification avec une température chacune…"
+    },
+    "5: Count the Comments": {
+      "Checking with only one comment...": "Vérification avec un seul commentaire…",
+      "Testing counting right...": "Vérification du bon comptage…"
+    },
+    "6: Give Me an Overview": {
+      "Checking with only one article...": "Vérification avec un seul article…",
+      "Checking 0 quantitys...": "Vérification avec des quantités à zéro…"
+    },
+    "7: Analyze": {
+      "Checking with only one Person": "Vérification avec une seule personne…",
+      "Checking with different sortings": "Vérification avec différents tris…"
+    },
+    "8: Start templating": {
+      "Checking without logins": "Vérification sans connexions…",
+      "Hello Tom (logins: 3)": "Bonjour Tom (connexions : 3)",
+      "Hello Tom (logins: 0)": "Bonjour Tom (connexions : 0)"
+    },
+    "9: ToDo Template": {
+      "Checking without elements": "Vérification sans données…",
+      "Checking without todos": "Vérification sans tâches…",
+      "Checking sorting": "Vérification du tri…",
+      "Checking timecalculation": "Vérification du calcul de distance de date…"
+    }
   }
 }
