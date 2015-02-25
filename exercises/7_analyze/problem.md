@@ -2,7 +2,7 @@
 Now lets go a little bit deeper...
 * * *
 ## Way, Way Down ##
-For this mission you will need the know the function `filter`.
+For this mission you will need to know the function `filter`.
 ```js
 _.filter(collection, [callback=identity])
 ```
@@ -35,7 +35,7 @@ that *contains* the condition logic for filtering while `where`
 takes an object that *represents* the condition.
 * * *
 ## Your Mission ##
-We have the income of a few freelancers in a Array of Objects:
+We have the income of a few freelancers in an Array of Objects:
 ```js
 [ { name: "mike",  income: 2563 },
   { name: "kim",   income: 1587 },
