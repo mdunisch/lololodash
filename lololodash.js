@@ -16,5 +16,5 @@ function fpath(f) {
 workshopper({
     name        : 'lololodash',
     appDir      : __dirname,
-    languages   : ['en', 'fr']
+    languages   : ['en', 'fr', 'de']
 });
