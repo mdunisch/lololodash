@@ -23,12 +23,12 @@ var run = {
         ],
         "Tim": [
             {
-                todo: "Contibute to an Open-Sorce-Project",
+                todo: "Contribute to an Open-Source-Project",
                 date: moment().add(2, 'days').toJSON()
             }
         ]
     },
-    expect: "<ul>\n<li>Tom\n<ul><li><b>URGENT</b> Lean Lo-Dash</li>\n<li>Become a Lo-Dash master</li>\n<li>Clean kitchen</li>\n</ul>\n</li>\n<li>Tim\n<ul><li><b>URGENT</b> Contibute to an Open-Sorce-Project</li>\n</ul>\n</li>\n</ul>"
+    expect: "<ul>\n<li>Tom\n<ul><li><b>URGENT</b> Lean Lo-Dash</li>\n<li>Become a Lo-Dash master</li>\n<li>Clean kitchen</li>\n</ul>\n</li>\n<li>Tim\n<ul><li><b>URGENT</b>Contribute to an Open-Source-Project</li>\n</ul>\n</li>\n</ul>"
 };
 
 
