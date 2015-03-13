@@ -13,7 +13,7 @@ var run = {
                 date: moment().add(10, 'days').toJSON()
             },
             {
-                todo: "Lean Lo-Dash",
+                todo: "Learn Lo-Dash",
                 date: moment().add(1, 'days').toJSON()
             },
             {
@@ -28,7 +28,7 @@ var run = {
             }
         ]
     },
-    expect: "<ul>\n<li>Tom\n<ul><li><b>URGENT</b> Lean Lo-Dash</li>\n<li>Become a Lo-Dash master</li>\n<li>Clean kitchen</li>\n</ul>\n</li>\n<li>Tim\n<ul><li><b>URGENT</b>Contribute to an Open-Source-Project</li>\n</ul>\n</li>\n</ul>"
+    expect: "<ul>\n<li>Tom\n<ul><li><b>URGENT</b>Learn Lo-Dash</li>\n<li>Become a Lo-Dash master</li>\n<li>Clean kitchen</li>\n</ul>\n</li>\n<li>Tim\n<ul><li><b>URGENT</b>Contribute to an Open-Source-Project</li>\n</ul>\n</li>\n</ul>"
 };
 
 
