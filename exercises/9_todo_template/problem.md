@@ -26,7 +26,7 @@ You can write templates without learning a template syntax -- just use
 Javascript. Isn't that awesome?
 
 
-As a second parameter, `template()` accepts a options object. One of
+As a second parameter, `template()` accepts an options object. One of
 the options I really like and want to show you is `option.imports`.
 With `options.imports`, you can define an object to describe values
 to import into the template as local variables.
@@ -59,7 +59,7 @@ We have a JSON of different to-do's:
       "date": "2014-08-19T12:13:20.207Z"
     },
     {
-      "todo": "Lean Lo-Dash",
+      "todo": "Learn Lo-Dash",
       "date": "2014-08-10T12:13:20.210Z"
     },
     {
@@ -69,7 +69,7 @@ We have a JSON of different to-do's:
   ],
   "Tim": [
     {
-      "todo": "Contibute to an Open-Sorce-Project",
+      "todo": "Contribute to an Open-Source-Project",
       "date": "2014-08-11T12:13:20.210Z"
     }
   ]
@@ -78,7 +78,7 @@ We have a JSON of different to-do's:
 We want to create a simple nested `<ul><li>` list of all the
 to-do items. But, in addition to creating HTML code, we want you to:
 - Sort the to-do items by date (from earliest to latest)
-- Add a "<b>URGENT</b>" to every `<li>` when the date is only 2 days or fewer from today.
+- Add an "<b>URGENT</b>" to every `<li>` when the date is only 2 days or fewer from today.
 
 The HTML produced should look like this:
 
@@ -86,13 +86,13 @@ The HTML produced should look like this:
 ```html
 <ul>
     <li>Tom
-    <ul><li><b>URGENT</b> Lean Lo-Dash</li>
+    <ul><li><b>URGENT</b> Learn Lo-Dash</li>
         <li>Become a Lo-Dash master</li>
         <li>Clean kitchen</li>
     </ul>
     </li>
     <li>Tim
-    <ul><li><b>URGENT</b> Contibute to an Open-Sorce-Project</li>
+    <ul><li><b>URGENT</b> Contribute to an Open-Source-Project</li>
     </ul>
     </li>
 </ul>
