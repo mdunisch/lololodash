@@ -33,7 +33,7 @@ We have a list of words that we want to modify.
 ```js
 ['Test', 'Hello', 'World', 'Node', 'JavaScript']
 ```
-We want to modify each word so that they are all appended with the word **Chained**, converted to uppercase, and sorted by length. The result should look like this:  
+We want to modify each word so that they are all appended with the word **Chained**, converted to uppercase, and sorted by alphabetical order. The result should look like this:  
 ```js
 ['HELLOCHAINED', 'JAVASCRIPTCHAINED', 'NODECHAINED', 'TESTCHAINED', 'WORLDCHAINED']
 ```
