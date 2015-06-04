@@ -1,0 +1,67 @@
+{
+  "title": "Lololodash - LoDash 배우기",
+  "subtitle": "\u001b[23m연습문제를 선택해 \u001b[3m엔터\u001b[23m로 시작하세요",
+  "common": {
+    "exercise": {
+      "logcompare": {
+        "input": "입력",
+        "output": "출력",
+        "output_should_be": "출력은 다음과 같아야 합니다."
+      },
+      "fail": {
+        "missing_deps": "해결책에 사용할 의존성을 모두 설치해야 합니다.(예를 들면 lodash)",
+        "module_not_found": "파일을 찾을 수 없습니다. 경로가 맞는지 확인하세요.",
+        "must_export_function": "항상 module.exports를 사용해 함수를 반환하세요."
+      },
+      "Check with Elements of \"run\"-Enviroment": "« run » 환경에서 요소를 확인",
+      "Checking with standard dataset...": "일반 데이터셋으로 확인 중...",
+      "Checking with empty Object": "빈 객체로 확인 중",
+      "Checking with empty Object...": "빈 객체로 확인 중...",
+      "Checking with empty Array...": "빈 배열로 확인 중...",
+      "Checking with standard hashtables...": "일반 해시 테이블로 확인 중..."
+    }
+  },
+  "exercise": {
+    "1: Getting Started": "1 : 시작하기",
+    "2: Sort Me": "2 : 정렬해주세요",
+    "3: In Every Case": "3 : 모든 경우",
+    "4: Everyone Is Min": "4 : Everyone Is Min",
+    "5: Count the Comments": "5 : 댓글 세기",
+    "6: Give Me an Overview": "6 : 요약해 주세요",
+    "7: Analyze": "7 : 분석",
+    "8: Start templating": "8 : 템플릿 시작하기",
+    "9: ToDo Template": "9 : To-do 템플릿"
+  },
+  "exercises": {
+    "2: Sort Me": {
+      "Checking with quantity as String...": "수량을 문자열로 확인 중..."
+    },
+    "4: Everyone Is Min": {
+      "Checking with only cold...": "추운 곳만 확인 중...",
+      "Checking with one temp each...": "온도 하나하나 확인 중..."
+    },
+    "5: Count the Comments": {
+      "Checking with only one comment...": "한 댓글만 확인 중...",
+      "Testing counting right...": "제대로 세었는지 테스트 중..."
+    },
+    "6: Give Me an Overview": {
+      "Checking with only one article...": "한 품목으로만 확인 중...",
+      "Checking 0 quantitys...": "수량이 0일 때 확인 중..."
+    },
+    "7: Analyze": {
+      "Checking with only one Person": "한 사람만 있을 때 확인 중...",
+      "Checking with different sortings": "다른 정렬을 확인 중..."
+    },
+    "8: Start templating": {
+      "Checking without logins": "로그인 없이 확인 중...",
+      "Hello Tom (logins: 3)": "안녕 톰 (로그인: 3)",
+      "Hello Tom (logins: 0)": "안녕 톰 (로그인: 0)"
+    },
+    "9: ToDo Template": {
+      "Checking without elements": "요소 없이 확인 중...",
+      "Checking without todos": "To-do 없이 확인 중...",
+      "Checking sorting": "정렬 확인 중...",
+      "Checking timecalculation": "시간 계산 확인 중..."
+    }
+  }
+}
