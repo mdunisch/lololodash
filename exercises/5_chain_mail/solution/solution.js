@@ -2,7 +2,7 @@
 
 var _ = require("lodash");
 
-module.exports = function (arr) {
+var wordsmodify = function (arr) {
     return _.chain(arr)
       .map(function (item) {
         return item + 'Chained';
@@ -13,3 +13,5 @@ module.exports = function (arr) {
       .sortBy()
       .value();
 };
+
+module.exports = wordsmodify;
