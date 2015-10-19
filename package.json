@@ -1,6 +1,6 @@
 {
   "name": "lololodash",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "A Set of Lo-Dash Javascript Exercises",
   "main": "lololodash.js",
   "repository": {
