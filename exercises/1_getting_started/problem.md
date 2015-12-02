@@ -1,11 +1,11 @@
 # Getting Started #
-**Hello there - let's start using Lo-Dash!**  
+**Hello there - let's start using Lo-Dash!**
 What is **[Lo-Dash](http://lodash.com/)**? It's a Javascript library that gives you
 lots of help when working with Arrays, JSON and Javascript objects. **Lo-Dash** can
 be used with Node.js in the back-end but also in a browser in the front-end. Have you
 heard of **[underscore.js](http://underscorejs.org/)**? **Lo-Dash** is a fork of
 **underscore.js** and it's simply better! If you already know **underscore.js**,
-that's awesome. You definitely won't have any trouble with **Lo-Dash**!  
+that's awesome. You definitely won't have any trouble with **Lo-Dash**!
 * * *
 ## Down To Business ##
 Let's start with a very often-used function in **Lo-Dash** called `where`:
@@ -30,7 +30,7 @@ _.where(characters, { 'age': 36 });
 ```
 * * *
 ## Your Mission ##
-We have a array of Javascript Objects representing some users in the following format:
+We have an array of Javascript Objects representing some users in the following format:
 ```js
 [
     { id: 22, username: "martin", active: true},
@@ -57,8 +57,8 @@ module.exports = worker;
 **lololodash** will call your function and test it with different arguments.
 * * *
 ## To Start ##
-Make sure you have **lodash** installed!  
+Make sure you have **lodash** installed!
 ```
 npm install lodash
-```  
+```
 Good luck!
