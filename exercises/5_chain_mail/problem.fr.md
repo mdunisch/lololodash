@@ -1,12 +1,12 @@
-# Cotte de Mailles #
-Parfois, une seule méthode d'utilité ne suffit pas ou peu. Chaînage méthodes ensemble vous permet de couper la quantité de code tout en vous permettant de faire votre travail.
+# Travail à la chaîne #
+Parfois, l'utilisation d'une seule fonction n'est pas suffisante. Le `chaînage` peut alors vous permettre de réduire la quantité de code tout en vous permettant de faire votre travail.
 * * *
-## Du genre? ##
-Ceci est où le fonction `_.chain` vient en:
+## Du genre ? ##
+C'est là que la fonction `_.chain` entre en jeu:
 ```js
 _.chain(value)
 ```
-`chain` vous permet de chaîne ou liez plusieurs **Lo-Dash** méthodes ensemble sur une collection (tableaux, objets) explicitement et puis finalement retourne la valeur de l'ensemble de l'opération.
+`chain` vous permet de chaîner ou de lier plusieurs méthodes **Lo-Dash** ensemble sur une collection (tableaux, objets) et de retourner la valeur de l'ensemble de l'opération.
 
 #### Exemple ####
 ```js
@@ -33,7 +33,7 @@ Nous avons une liste de mots que nous voulons modifier.
 ```js
 ['Test', 'Hello', 'World', 'Node', 'JavaScript']
 ```
-Nous voulons modifier chaque mot afin qu'ils soient tous ajoutés avec le mot Enchaîné, converti en lettres majuscules, et classés par ordre alphabétique. Le résultat devrait ressembler à ceci:  
+Nous voulons modifier chaque mot afin de leur ajouter **Chained**, de les convertir en majuscules, et de les classer par ordre alphabétique. Le résultat final devrait ressembler à ceci:  
 ```js
 ['HELLOCHAINED', 'JAVASCRIPTCHAINED', 'NODECHAINED', 'TESTCHAINED', 'WORLDCHAINED']
 ```

@@ -12,7 +12,7 @@ _.every(collection, [callback=identity])
 _.some(collection, [callback=identity])
 ```
 
-`every` et `some` vérifient que le `callback` fournit renvoie `trye` pour
+`every` et `some` vérifient que le `callback` fournit renvoie `true` pour
 **tous** les éléments, ou pour **au moins un** élément, respectivement.
 
 La fonction `some` renvoie `true` dès qu’elle tombe sur un élément qui
