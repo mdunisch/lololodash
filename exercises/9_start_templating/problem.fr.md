@@ -48,7 +48,7 @@ représente une connexion).  Votre fonction devrait renvoyer une
 `String` qui ait l’aspect suivant :
 
 ```
-Bonjour Foo (connexions : 2)
+Hello Foo (logins : 2)
 ```
 
 ## Base de travail
