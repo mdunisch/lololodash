@@ -9,13 +9,13 @@
 없으실 거예요.
 * * *
 ## 해봅시다 ##
-**Lo-Dash**에서 아주 자주 사용하는 `where` 함수로 시작해보죠.
+**Lo-Dash**에서 아주 자주 사용하는 `filter` 함수로 시작해보죠.
 
 ```js
-_.where(collection, props)
+_.filter(collection, props)
 ```
 
-`where`는 `props`에 정의된 조건을 사용해 `collection`을 필터링 합니다.
+`filter`는 `props`에 정의된 조건을 사용해 `collection`을 필터링 합니다.
 `collection`은 배열, JSON 데이터, JavaScript 객체 등이 될 수 있습니다.
 
 #### 예제 ####
@@ -25,7 +25,7 @@ var characters = [
   { 'name': 'fred',   'age': 40, 'pets': ['baby puss', 'dino'] }
 ];
 
-_.where(characters, { 'age': 36 });
+_.filter(characters, { 'age': 36 });
 
 // [{ 'name': 'barney', 'age': 36, 'pets': ['hoppy'] }]
 ```

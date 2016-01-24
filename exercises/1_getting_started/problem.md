@@ -8,13 +8,13 @@ heard of **[underscore.js](http://underscorejs.org/)**? **Lo-Dash** is a fork of
 that's awesome. You definitely won't have any trouble with **Lo-Dash**!
 * * *
 ## Down To Business ##
-Let's start with a very often-used function in **Lo-Dash** called `where`:
+Let's start with a very often-used function in **Lo-Dash** called `filter`:
 
 ```js
-_.where(collection, props)
+_.filter(collection, props)
 ```
 
-`where` filters `collection` using the condition defined by `props`.
+`filter` filters `collection` using the condition defined by `props`.
 `collection` could be anything -- an Array, JSON data or a Javascript Object.
 
 #### Example ####
@@ -24,7 +24,7 @@ var characters = [
   { 'name': 'fred',   'age': 40, 'pets': ['baby puss', 'dino'] }
 ];
 
-_.where(characters, { 'age': 36 });
+_.filter(characters, { 'age': 36 });
 
 // [{ 'name': 'barney', 'age': 36, 'pets': ['hoppy'] }]
 ```
