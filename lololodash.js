@@ -2,8 +2,6 @@
 
 'use strict';
 
-require('babel/register');
-
 var workshopper = require('workshopper'),
     path        = require('path'),
     updateNotifier = require('update-notifier'),

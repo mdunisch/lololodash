@@ -1,6 +1,6 @@
 {
   "name": "lololodash",
-  "version": "0.6.9",
+  "version": "0.8.0",
   "description": "A Set of Lo-Dash Javascript Exercises",
   "main": "lololodash.js",
   "repository": {
@@ -21,11 +21,9 @@
   },
   "homepage": "https://github.com/mdunisch/lololodash",
   "dependencies": {
-    "babel": "^5.8.34",
     "colors-tmpl": "^1.0.0",
     "diff": "^2.2.1",
-    "lodash": "^3.10.1",
-    "moment": "^2.11.0",
+    "lodash": "^4.0.0",
     "update-notifier": "^0.6.0",
     "workshopper": "^2.7.0",
     "workshopper-exercise": "^2.5.3"
