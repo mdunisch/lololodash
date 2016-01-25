@@ -16,13 +16,13 @@ aucun problème pour vous habituer à **Lo-Dash** !
 ## Allez, on s’y met
 
 Commençons avec une fonction très fréquemment utilisée de **Lo-Dash**,
-appelée `where` :
+appelée `filter` :
 
 ```js
-_.where(collection, props)
+_.filter(collection, props)
 ```
 
-`where` filtre `collection` en utilisant la condition définie par `props`.
+`filter` filtre `collection` en utilisant la condition définie par `props`.
 `collection` peut être n’importe quoi -- un `Array`, du JSON ou un objet Javascript.
 
 ## Exemple
@@ -33,7 +33,7 @@ var characters = [
   { 'name': 'fred',   'age': 40, 'pets': ['baby puss', 'dino'] }
 ];
 
-_.where(characters, { 'age': 36 });
+_.filter(characters, { 'age': 36 });
 
 // [{ 'name': 'barney', 'age': 36, 'pets': ['hoppy'] }]
 ```
