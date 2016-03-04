@@ -71,7 +71,7 @@ var testing = {
             }
         ]
     },
-    'Checking 0 quantitys...': {
+    'Checking 0 quantities...': {
         input: [
             {
                 article: 1,
