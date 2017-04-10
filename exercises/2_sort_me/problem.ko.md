@@ -17,8 +17,8 @@ _.sortBy([1, 2, 3], function(num) { return Math.sin(num); });
 // → [3, 1, 2]
 ```
 `callback`이 함수라면, `callback(value, index|key, collection)`으로 호출합니다.
-대부분의 **Lo-Dash** 함수처럼, `sortBy`도 "*.pluck*" 단축 콜백을 사용할 수
-있습니다. (http://lodash.com/docs#pluck)
+대부분의 **Lo-Dash** 함수처럼, `sortBy`도 "*.map*" 단축 콜백을 사용할 수
+있습니다. (http://lodash.com/docs#map)
 ```js
 var characters = [
   { 'name': 'barney',  'age': 36 },

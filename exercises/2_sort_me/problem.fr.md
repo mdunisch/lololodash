@@ -27,7 +27,7 @@ _.sortBy([1, 2, 3], function(num) { return Math.sin(num); });
 Si `callback` est une fonction, elle sera appelée comme `callback(value, index|key, collection)`.
 
 Comme la plupart des fonctions **Lo-Dash**, `sortBy` peut également utiliser
-des raccourcis *`.pluck`* (voir http://lodash.com/docs#pluck),
+des raccourcis *`.map`* (voir http://lodash.com/docs#map),
 tels qu’un nom de propriété (ou plusieurs noms) :
 
 ```js
