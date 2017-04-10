@@ -5,7 +5,7 @@ lololodash
 ![alt tag](https://raw.github.com/mdunisch/lololodash/master/screen.png)
 
 ## Getting Started ##
-1. First, install [nodejs](http://nodejs.org) version 0.10 or later.
+1. First, install [nodejs](http://nodejs.org) version 4.0 or later.
 
 2. The `nodejs` installation will also install `npm`, the [Node Package Manager](https://www.npmjs.org/). 
 

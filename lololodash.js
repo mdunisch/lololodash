@@ -1,20 +1,13 @@
 #!/usr/bin/env node
 
-'use strict';
+const workshopper = require('workshopper');
+const updateNotifier = require('update-notifier');
+const packageJson = require('./package.json');
 
-var workshopper = require('workshopper'),
-    path        = require('path'),
-    updateNotifier = require('update-notifier'),
-    pkg = require('./package.json');
-
-updateNotifier({pkg: pkg}).notify();
-
-function fpath(f) {
-    return path.join(__dirname, f);
-}
+updateNotifier({pkg: packageJson}).notify();
 
 workshopper({
-    name        : 'lololodash',
-    appDir      : __dirname,
-    languages   : ['en', 'fr', 'ko']
+    name: 'lololodash',
+    appDir: __dirname,
+    languages: ['en', 'fr', 'ko']
 });

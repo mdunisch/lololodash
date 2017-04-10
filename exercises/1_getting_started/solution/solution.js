@@ -1,8 +1,6 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
-
-var filterwhere = function (item) {
+const filterwhere = function (item) {
     return _.filter(item, {active: true});
 };
 

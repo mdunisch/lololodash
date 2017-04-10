@@ -1,10 +1,8 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
+const template = function (inputvar) {
 
-var template = function (inputvar) {
-
-    var mytemplate = "Hello <%= name %> (logins: <%= login.length %>)";
+    let mytemplate = "Hello <%= name %> (logins: <%= login.length %>)";
 
     return _.template(mytemplate)(inputvar);
 };

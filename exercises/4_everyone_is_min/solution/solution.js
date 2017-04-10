@@ -1,16 +1,14 @@
-'use strict';
-
-var _ = require("lodash");
+const _ = require("lodash");
 
 var tempsort = function (item) {
+    
     var result = {
         hot: [],
         warm: []
     };
-
-    function check_temp (item) {
-        return item > 19;
-    }
+    
+    // If temp > 19
+    const check_temp = (item) => item > 19;
 
     _.forEach(item, function (town, townname) {
 

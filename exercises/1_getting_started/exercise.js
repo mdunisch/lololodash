@@ -1,9 +1,6 @@
-'use strict';
+const verify = require("../../lib/verify.js");
 
-var verify = require("../../lib/verify.js");
-var _ = require("lodash");
-
-var run = {
+const run = {
     json: [
         {
             id: 22,

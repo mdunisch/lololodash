@@ -1,8 +1,6 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
-
-var commentcount = function (comments) {
+const commentcount = function (comments) {
 
     var counted = [];
 

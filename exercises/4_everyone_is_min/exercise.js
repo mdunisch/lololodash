@@ -1,9 +1,6 @@
-'use strict';
+const verify = require("../../lib/verify.js");
 
-var verify = require("../../lib/verify.js"),
-    _ = require("lodash");
-
-var run = {
+const run = {
     json: {
         Hamburg: [14, 15, 16, 14, 18, 17, 20, 22, 21, 18, 19, 23],
         Munich: [16, 17, 19, 20, 21, 23, 22, 21, 20, 19, 24, 23],

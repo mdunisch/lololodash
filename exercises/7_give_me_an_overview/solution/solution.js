@@ -1,8 +1,6 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
-
-var overview = function (orders) {
+const overview = function (orders) {
 
     var overviewarray = [],
         total = 0;

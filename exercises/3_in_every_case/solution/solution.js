@@ -1,8 +1,7 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
-
-module.exports = function(collection) {
+const inEveryCase = function(collection){
+  
   // add a size attribute to the collection based on the item's population
   return _.forEach(collection, function(item) {
     if (item.population > 1) {
@@ -14,3 +13,5 @@ module.exports = function(collection) {
     }
   });
 };
+
+module.exports = inEveryCase;

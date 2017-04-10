@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/mdunisch/lololodash.git"
   },
+  "engines" : {
+    "node" : ">=4.0.0"
+  },
   "bin": "lololodash.js",
   "preferGlobal": true,
   "keywords": [

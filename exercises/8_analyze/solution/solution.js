@@ -1,12 +1,10 @@
-'use strict';
+const _ = require("lodash");
 
-var _ = require("lodash");
+const analyze = function (item) {
 
-var analyze = function (item) {
-
-    var average,
-        underperform,
-        overperform;
+    let average;
+    let underperform;
+    let overperform;
 
     // Sort
     item = _.sortBy(item, "income");
