@@ -10,9 +10,7 @@ const analyze = function (item) {
     item = _.sortBy(item, "income");
 
     // Sum of all incomes
-    average = _.reduce(item, function(sum, num) {
-        return sum + num.income;
-    }, 0);
+    average = _.sumBy(list, 'income');
 
     // calculate average
     average = average / item.length;
