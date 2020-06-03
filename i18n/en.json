@@ -9,7 +9,7 @@
         "output_should_be": "Output should be:"
       },
       "fail": {
-        "missing_deps": "You need to install all of the dependencies you are using in your solution (e.g. lodash)",
+        "missing_deps": "You need to install all of the dependencies you are using in your solution (e.g. lodash): {{missing}}",
         "module_not_found": "Could not find your file. Make sure the path is correct.",
         "must_export_function": "You should always return a function using the module.exports object."
       }

@@ -9,7 +9,7 @@
         "output_should_be": "출력은 다음과 같아야 합니다."
       },
       "fail": {
-        "missing_deps": "해결책에 사용할 의존성을 모두 설치해야 합니다.(예를 들면 lodash)",
+        "missing_deps": "해결책에 사용할 의존성을 모두 설치해야 합니다.(예를 들면 lodash): {{missing}}",
         "module_not_found": "파일을 찾을 수 없습니다. 경로가 맞는지 확인하세요.",
         "must_export_function": "항상 module.exports를 사용해 함수를 반환하세요."
       },
