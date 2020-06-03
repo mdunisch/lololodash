@@ -1,14 +1,14 @@
 {
   "name": "lololodash",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A Set of Lo-Dash Javascript Exercises",
   "main": "lololodash.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mdunisch/lololodash.git"
   },
-  "engines" : {
-    "node" : ">=4.0.0"
+  "engines": {
+    "node": ">=4.0.0"
   },
   "bin": "lololodash.js",
   "preferGlobal": true,
