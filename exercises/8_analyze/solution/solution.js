@@ -2,35 +2,18 @@ const _ = require("lodash");
 
 const analyze = function (item) {
 
-    let average;
-    let underperform;
-    let overperform;
-
     // Sort
-    item = _.sortBy(item, "income");
+    let sorted = _.sortBy(array, 'income');
 
-    // Sum of all incomes
-    average = _.reduce(item, function(sum, num) {
-        return sum + num.income;
-    }, 0);
-
-    // calculate average
-    average = average / item.length;
-
-    // filter underperformer
-    underperform = _.filter(item, function (num) {
-        return num.income <= average;
-    });
-
-    // filter overperformer
-    overperform = _.filter(item, function (num) {
-        return num.income > average;
-    });
+    // Calculate average of all incomes
+    let average = _.meanBy(array, item => item.income);
 
     return {
         average: average,
-        underperform: underperform,
-        overperform: overperform
+        // Filter underperformers
+        underperform: _.filter(sorted, item => item.income <= average),
+        // Filter overperformers
+        overperform: _.filter(sorted, item => item.income > average)
     };
 
 };
